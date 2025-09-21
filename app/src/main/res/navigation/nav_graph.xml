@@ -15,9 +15,15 @@
             app:destination="@id/coffeeDetail">
         </action>
     </fragment>
+
     <fragment
         android:id="@+id/coffeeDetail"
         android:name="com.example.lab_week_03.DetailFragment"
         android:label="Detail"
-        tools:layout="@layout/fragment_detail" />
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/coffee_back_action"
+            app:destination="@id/coffeeList">
+        </action>
+    </fragment>
 </navigation>
